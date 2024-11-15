@@ -1,6 +1,10 @@
 def test_function():
     def inner_function():
         print("Я в области видимости функции test_function")
-        inner_function()
-test_function()
+    #inner_function() # ничего не выводит если выводить одну функцию
+    ''' Если выводить функции по одной то ничего не выводит 
+     а если выводить вместе  две функции то выводит 
+     Я в области видимости функции test_function'''
 
+    inner_function() # ничего не выводит
+test_function() # ничего не выводит если выводить одну функцию
